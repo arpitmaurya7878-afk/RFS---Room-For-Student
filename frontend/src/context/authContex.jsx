@@ -6,7 +6,7 @@ export const authDataContext = createContext()
 
 
 function AuthContex({children}) {
-    let serverUrl = "http://localhost:8000"
+    let serverUrl = "https://rfs-room-for-student-backend.onrender.com"
 
 
    let value = {
