@@ -3,9 +3,7 @@ import { authDataContext } from './authContex'
 import axios from "axios"
 
 
-
-
- export const userDataContext = createContext()
+export const userDataContext = createContext()
 
  function Usercontext({children}) {
 
