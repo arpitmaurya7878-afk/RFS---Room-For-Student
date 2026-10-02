@@ -10,7 +10,7 @@ function Login() {
 
   let { serverUrl } = useContext(authDataContext);
   let { userData, setUserData } = useContext(userDataContext);
-
+  let [errorMessage, setErrorMessage] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
@@ -42,10 +42,12 @@ setUserData(userResult.data);
 localStorage.setItem("successMessage", "Login successful!");
 navigate("/");
     } catch (error) {
+  console.log("error in frontend login page", error);
 
-      console.log("error in frontend login page", error);
-
-    }
+  setErrorMessage(
+    error.response?.data?.message || "Something went wrong. Please try again."
+  );
+}
   };
 
   return (
@@ -121,6 +123,12 @@ navigate("/");
 
 
           {/* Login Button */}
+
+          {errorMessage && (
+  <p className="text-red-500 text-sm text-center mb-4">
+    {errorMessage}
+  </p>
+)}
           <button
             type="submit"
             className="w-full py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
