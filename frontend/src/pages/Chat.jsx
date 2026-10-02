@@ -200,7 +200,7 @@ function Chat() {
 
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition mb-4 sm:mb-0"
             >
               Send
             </button>
