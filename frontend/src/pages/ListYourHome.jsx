@@ -223,7 +223,7 @@ function ListYourHome() {
                     {/* Location */}
                     <div className="mb-6">
                         <label className="block text-gray-700 font-medium mb-2">
-                            Property Location
+                            Property Location(Optional)
                         </label>
 
                         <button
@@ -288,7 +288,7 @@ function ListYourHome() {
 
                             <div>
                                 <p className="text-sm text-gray-500 mb-2">
-                                    Room Image 2
+                                    Room/Kitchen Image 
                                 </p>
 
                                 <input
