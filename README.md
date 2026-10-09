@@ -1,6 +1,7 @@
 # RFS - Room For Student
 
 A full-stack web application where property owners can list rooms for rent and students can browse available rooms, contact owners, and chat in real time.
+For demo visit https://rfs-room-for-student.onrender.com
 
 ## Overview
 
