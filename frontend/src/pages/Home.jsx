@@ -49,7 +49,7 @@ function Home() {
 
         {displayedListings.length === 0 ? (
           <p className="text-center text-gray-500">
-            No listings available
+            Please wait for a while it may take 1-2 min......
           </p>
         ) : (
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
